@@ -71,3 +71,32 @@ Login.innerHTML = 'Login'
 const navbar = document.querySelector('nav')
 navbar.append(FAQ)
 navbar.prepend(Login)
+
+
+const h1Element = document.querySelector(".cta-text h1").innerHTML = "<h1>Dom <br> Is <br> Awesome!</h1>"
+h1Element[0].textContent = siteContent ["cta"]["h1"];
+
+
+
+const h4Element = document.querySelectorAll('h4');
+h4Element[0].textContent = siteContent["main-content"] ["features-h4"];
+h4Element[1].textContent = siteContent["main-content"] ["about-h4"];
+h4Element[2].textContent = siteContent["main-content"] ["services-h4"];
+h4Element[3].textContent = siteContent["main-content"] ["product-h4"];
+h4Element[4].textContent = siteContent["main-content"] ["vision-h4"];
+h4Element[5].textContent = siteContent["contact"] ["contact-h4"];
+
+
+const paragraphs = document.querySelectorAll('p');
+paragraphs [0].textContent = siteContent["main-content"] ["features-content"];
+paragraphs [1].textContent = siteContent["main-content"] ["about-content"];
+paragraphs [2].textContent = siteContent["main-content"] ["services-content"];
+paragraphs [3].textContent = siteContent["main-content"] ["product-content"];
+paragraphs [4].textContent = siteContent["main-content"] ["vision-content"];
+paragraphs [5].textContent = siteContent["contact"] ["address"];
+paragraphs [6].textContent = siteContent["contact"] ["phone"];
+paragraphs [7].textContent = siteContent["contact"] ["email"];
+paragraphs [8].textContent = siteContent["footer"] ["copyright"];
+
+const button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"]
