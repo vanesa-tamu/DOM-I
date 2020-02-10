@@ -62,3 +62,12 @@ nav.forEach((green) => {
   green.style.color = "green"
 })
 
+const FAQ = document.createElement('a')
+FAQ.innerHTML = 'FAQ'
+
+const Login = document.createElement('a')
+Login.innerHTML = 'Login'
+
+const navbar = document.querySelector('nav')
+navbar.append(FAQ)
+navbar.prepend(Login)
